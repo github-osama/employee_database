@@ -63,3 +63,6 @@ Benefit_Type ENUM('Yes', 'No'),
 Coverage_Details ENUM('Yes', 'No'),
 FOREIGN KEY (Employee_ID) REFERENCES Employee_Table(Employee_ID)
 );
+
+ALTER TABLE Employee_Table
+ADD Employee_Type ENUM('Full Time', 'Freelancer', 'Trainee', 'Third Party');
